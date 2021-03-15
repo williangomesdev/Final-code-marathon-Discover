@@ -182,8 +182,9 @@ const Utils = {
     //Funcionalidade formatAmount = formatar
     formatAmount(value) {
         //transformar em numero multiplicar por 100
-        value = Number(value) * 100
-        return value
+        value = value * 100
+        //arredonda o numero
+        return Math.round(value)
     },
 
     //Formatar Data
